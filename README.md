@@ -2,7 +2,7 @@
 
 ### Contributors
 
-#### Servan Pelle
+#### Servan Pellé
 #### Robin Bochu
 #### Léo Varin
 #### Jérémy Morel
