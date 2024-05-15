@@ -9,6 +9,10 @@ def create_app():
     def root():
         return app.send_static_file('index.html')
 
+    @app.route('/quizz')
+    def quizz():
+        return app.send_static_file('quizz.html')
+
     return app
 
 flask_app = create_app()
