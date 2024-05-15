@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Flask</title>
+</head>
+<body>
+    <h1>Prototype Robin</h1>
+    <h2>Capture Test</h2>
+    <h3>Menu</h3>
+    <ul>
+        <li>
+            <a href="./">Accueil</a>
+        </li>
+        
+        <li>      
+            <a href="./capture-test">Capture Test</a>
+        </li>
+    </ul>
+    
+    <button id="startButton">Start Capture</button>
+    <button id="stopButton" disabled>Stop Capture</button>
+    <audio id="audioPlayer" controls></audio>
+
+    <script>
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        let mediaRecorder;
+        let audioChunks = [];
+        let audioContext = new AudioContext({ sampleRate: 48000 });
+
+        startButton.addEventListener('click', async () => {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                const source = audioContext.createMediaStreamSource(stream);
+                const destination = audioContext.createMediaStreamDestination();
+                source.connect(destination);
+
+                mediaRecorder = new MediaRecorder(destination.stream);
+                mediaRecorder.start();
+                startButton.disabled = true;
+                stopButton.disabled = false;
+
+                mediaRecorder.ondataavailable = event => {
+                    audioChunks.push(event.data);
+                };
+
+                mediaRecorder.onstop = () => {
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    audioPlayer.src = URL.createObjectURL(audioBlob);
+                    audioChunks = [];  // Clear the chunks for next recording
+                    
+                    // Send the blob to the server
+                    const formData = new FormData();
+                    formData.append('audioFile', audioBlob);
+
+                    fetch('/upload-audio', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => console.log('Success:', data))
+                    .catch((error) => console.error('Error:', error));
+                };
+
+            } catch (error) {
+                console.error('Pas accès au micro', error);
+            }
+        });
+
+        stopButton.addEventListener('click', () => {
+            mediaRecorder.stop();
+            startButton.disabled = false;
+            stopButton.disabled = true;
+        });
+    </script>
+</body>
+</html>
