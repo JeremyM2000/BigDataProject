@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <form method="post">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+          <label for="username">{{ form.username.label }}</label>
+          {{ form.username(class="form-control", id="username") }}
+          {% for error in form.username.errors %}
+            <span class="text-danger">{{ error }}</span>
+          {% endfor %}
+        </div>
+        <div class="form-group">
+          <label for="password">{{ form.password.label }}</label>
+          {{ form.password(class="form-control", id="password") }}
+          {% for error in form.password.errors %}
+            <span class="text-danger">{{ error }}</span>
+          {% endfor %}
+        </div>
+        <div class="form-check">
+          {{ form.remember(class="form-check-input", id="remember") }}
+          <label class="form-check-label" for="remember">{{ form.remember.label }}</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
