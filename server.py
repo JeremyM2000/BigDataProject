@@ -12,6 +12,10 @@ def create_app():
     @app.route('/quizz')
     def quizz():
         return app.send_static_file('quizz.html')
+    
+    @app.route('/createQuizz')
+    def createQuizz():
+        return app.send_static_file('createQuizz.html')
 
     return app
 

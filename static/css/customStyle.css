@@ -2,6 +2,65 @@
     height : 100vh;
 }
 
+.createQuizzTitle{
+    color:white;
+    font-size: 2rem;
+}
+
+.createQuizzBox{
+    background-color: rgb(44, 62, 80);
+    border-radius: 10px;
+    justify-content: center;
+    width : 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.createQuizzBoxPlayers{
+    
+    display:flex;
+    flex-wrap: wrap;
+    flex : column;
+    justify-content: center;
+}
+
+.quizzSizeBox{
+    margin : 15px;
+    color : white;
+    justify-content: space-between;
+}
+
+.startButton{
+    margin : 15px;
+    margin-bottom : 25px;
+}
+.playerList{
+    /* color: white; */
+    font-size: 1.3rem;
+    min-width : 300px;
+    background-color: white;
+    margin : 10px;
+    border-radius: 10px;
+}
+
+.player{
+    display : flex;
+    justify-content : space-between;
+    margin:5px;
+    font-size: 1rem;
+}
+
+.addPlayer{
+    min-width : 300px;
+    background-color: white;
+    margin : 10px;
+    border-radius: 10px;
+}
+
+
+
 .question{
     margin:20px;
     font-size: 2rem;
@@ -41,3 +100,84 @@
     align-items: center; /* Vertically center the text */
     justify-content: center; /* Horizontally center the text */
 }
+
+
+
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+.button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+  
+.button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+.input {
+    border-radius: 10px;
+    border: 0;
+    border-color: rgb(44, 62, 80);
+    background-color: white;
+    outline-offset: 3px;
+    padding: 5px 1rem;
+    transition: 0.25s;
+}
+  
+/* .input:focus {
+
+    background-color: #ffffff
+} */
+
+.delete {
+    background-color: rgb(44, 62, 80);; /* Red background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add some padding */
+    font-size: 16px; /* Increase font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .delete:hover {
+    border-radius: 10px;
+    transition: 1s ease;
+  }
+
+
