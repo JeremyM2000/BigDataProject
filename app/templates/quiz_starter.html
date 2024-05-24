@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Starter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <script>
+        function startTimer() {
+            var countdownElement = document.getElementById('countdown');
+            var timeLeft = 5;
+
+            var timer = setInterval(function() {
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    window.location.href = "{{ url_for('quiz') }}";
+                } else {
+                    countdownElement.innerHTML = timeLeft + " secondes restantes";
+                }
+                timeLeft -= 1;
+            }, 1000);
+        }
+        window.onload = startTimer;
+    </script>
+</head>
+<body>
+    {% include 'logged_header.html' %}
+    <h1>Ton Quiz va commencer</h1>
+    <ul>
+        {% for player in players %}
+            <li>{{ player }}</li>
+        {% endfor %}
+    </ul>
+    <p>{{ questions_per_player }}</p>
+    <p id="countdown">5 secondes restantes</p>
+</body>
+</html>

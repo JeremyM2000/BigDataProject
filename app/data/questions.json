@@ -1,0 +1,1118 @@
+{
+    "questions": [
+      {
+        "category": "Data Engineering",
+        "question": "Quel est l'outil de traitement de données massives utilisé par les data engineers ?",
+        "options": [
+          "Hadoop",
+          "Hadoken",
+          "Haddock",
+          "Hula Hoop"
+        ],
+        "correct_answer": "Hadoop"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel langage est souvent utilisé pour écrire des scripts de transformation de données ?",
+        "options": [
+          "Python",
+          "Parseltongue",
+          "Pythagoras",
+          "Poodle"
+        ],
+        "correct_answer": "Python"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel type de base de données est spécifiquement conçu pour les analyses rapides et complexes ?",
+        "options": [
+          "Base de données OLAP",
+          "Base de données OLAF",
+          "Base de données OLÉ",
+          "Base de données OMG"
+        ],
+        "correct_answer": "Base de données OLAP"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quelle technologie est utilisée pour le stockage distribué de données en colonne ?",
+        "options": [
+          "Apache Cassandra",
+          "Apache Casanova",
+          "Apache Casserole",
+          "Apache Cassoulet"
+        ],
+        "correct_answer": "Apache Cassandra"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel est le terme pour désigner un grand volume de données variées générées à grande vitesse ?",
+        "options": [
+          "Big Data",
+          "Big Mac",
+          "Big Bang",
+          "Big Brother"
+        ],
+        "correct_answer": "Big Data"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel framework est couramment utilisé pour traiter les flux de données en temps réel ?",
+        "options": [
+          "Apache Kafka",
+          "Apache Koala",
+          "Apache Karaoke",
+          "Apache Kaboom"
+        ],
+        "correct_answer": "Apache Kafka"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel est le modèle de programmation utilisé par Hadoop pour le traitement de données massives ?",
+        "options": [
+          "MapReduce",
+          "MapQuest",
+          "MapNap",
+          "MapSnooze"
+        ],
+        "correct_answer": "MapReduce"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel outil est utilisé pour orchestrer des workflows de données complexes ?",
+        "options": [
+          "Apache Airflow",
+          "Apache Airplane",
+          "Apache Airbrush",
+          "Apache Airguitar"
+        ],
+        "correct_answer": "Apache Airflow"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quelle est la technologie open source pour le stockage massif et la gestion de données structurées en utilisant le langage SQL ?",
+        "options": [
+          "Apache Hive",
+          "Apache Beehive",
+          "Apache Hornet",
+          "Apache Bumblebee"
+        ],
+        "correct_answer": "Apache Hive"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel système est utilisé pour le stockage de données massives sur des clusters de serveurs ?",
+        "options": [
+          "HDFS",
+          "HDF5",
+          "HDFL",
+          "HDTV"
+        ],
+        "correct_answer": "HDFS"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel framework distribué est utilisé pour traiter de grandes quantités de données sur des clusters ?",
+        "options": [
+          "Apache Spark",
+          "Apache Spork",
+          "Apache Shark",
+          "Apache Stark"
+        ],
+        "correct_answer": "Apache Spark"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel langage de requête est utilisé pour interroger des bases de données relationnelles ?",
+        "options": [
+          "SQL",
+          "Sequel",
+          "Squirrel",
+          "Squash"
+        ],
+        "correct_answer": "SQL"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quelle technique est utilisée pour garantir que les données sont distribuées de manière uniforme dans un cluster Hadoop ?",
+        "options": [
+          "Partitionnement",
+          "Partimonie",
+          "Particules",
+          "Partage de cookies"
+        ],
+        "correct_answer": "Partitionnement"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel outil permet l'intégration de données en temps réel et par lots dans des systèmes de stockage de données ?",
+        "options": [
+          "Apache Nifi",
+          "Apache WiFi",
+          "Apache Sci-Fi",
+          "Apache Hi-Fi"
+        ],
+        "correct_answer": "Apache Nifi"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel système de gestion de bases de données est conçu pour des performances élevées et des requêtes complexes ?",
+        "options": [
+          "PostgreSQL",
+          "Postman",
+          "Post-it",
+          "Post-scriptum"
+        ],
+        "correct_answer": "PostgreSQL"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel type de données est particulièrement adapté aux bases de données NoSQL comme MongoDB ?",
+        "options": [
+          "Données non structurées",
+          "Données non stressées",
+          "Données non striées",
+          "Données non stridulantes"
+        ],
+        "correct_answer": "Données non structurées"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel service cloud est largement utilisé pour le stockage de données massives et l'analyse ?",
+        "options": [
+          "Amazon S3",
+          "Amazon T3",
+          "Amazon G3",
+          "Amazon F3"
+        ],
+        "correct_answer": "Amazon S3"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quelle est la technologie de gestion de flux de données en temps réel développée par Apache ?",
+        "options": [
+          "Apache Flink",
+          "Apache Blink",
+          "Apache Clink",
+          "Apache Slink"
+        ],
+        "correct_answer": "Apache Flink"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel type de base de données est conçu pour une grande évolutivité et des performances en lecture-écriture élevées ?",
+        "options": [
+          "Base de données NoSQL",
+          "Base de données NoStress",
+          "Base de données NoSleep",
+          "Base de données NoProblem"
+        ],
+        "correct_answer": "Base de données NoSQL"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel est le terme pour désigner la technique de diviser des données en morceaux plus petits pour un traitement parallèle ?",
+        "options": [
+          "Shard",
+          "Shardes",
+          "Shark",
+          "Sharpie"
+        ],
+        "correct_answer": "Shard"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel outil de gestion de conteneurs est couramment utilisé pour déployer des applications data engineering ?",
+        "options": [
+          "Kubernetes",
+          "Kubrick",
+          "Kubenachos",
+          "Kubelet's Go"
+        ],
+        "correct_answer": "Kubernetes"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel langage de programmation est souvent utilisé pour le développement d'applications distribuées et de traitement de données ?",
+        "options": [
+          "Scala",
+          "Scalpel",
+          "Scalene",
+          "Scallywag"
+        ],
+        "correct_answer": "Scala"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel outil est utilisé pour le monitoring et la gestion des applications de big data ?",
+        "options": [
+          "Apache Ambari",
+          "Apache Ambar",
+          "Apache Amaretti",
+          "Apache Armani"
+        ],
+        "correct_answer": "Apache Ambari"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quelle est la principale caractéristique des bases de données de type key-value ?",
+        "options": [
+          "Simplicité de modèle",
+          "Simplicité de monade",
+          "Simplicité de marinade",
+          "Simplicité de mojito"
+        ],
+        "correct_answer": "Simplicité de modèle"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quelle est la technique utilisée pour la sauvegarde automatique et l'élimination des doublons dans les bases de données ?",
+        "options": [
+          "Déduplication",
+          "Déduplication",
+          "Dédufluffification",
+          "Dédujuplication"
+        ],
+        "correct_answer": "Déduplication"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel est l'avantage principal d'utiliser un data lake par rapport à un data warehouse ?",
+        "options": [
+          "Flexibilité dans le stockage de données",
+          "Nage libre avec les données",
+          "Piscine à données",
+          "Plongée en apnée dans les données"
+        ],
+        "correct_answer": "Flexibilité dans le stockage de données"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel est l'outil de visualisation de données populaire utilisé avec des bases de données de big data ?",
+        "options": [
+          "Tableau",
+          "Tabletop",
+          "Taboulé",
+          "Tabouret"
+        ],
+        "correct_answer": "Tableau"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel est l'outil Apache utilisé pour l'analyse interactive de grandes bases de données ?",
+        "options": [
+          "Apache Drill",
+          "Apache Grill",
+          "Apache Trill",
+          "Apache Shrill"
+        ],
+        "correct_answer": "Apache Drill"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel est le principal avantage de l'utilisation d'Apache Parquet pour le stockage de données ?",
+        "options": [
+          "Efficacité de compression",
+          "Capacité de danse",
+          "Durabilité du bois",
+          "Esthétique du sol"
+        ],
+        "correct_answer": "Efficacité de compression"
+      },
+      {
+        "category": "Data Engineering",
+        "question": "Quel est le processus de déplacement des données d'un système source à un système cible en temps réel ?",
+        "options": [
+          "ETL",
+          "ETC",
+          "ETA",
+          "ET Phone Home"
+        ],
+        "correct_answer": "ETL"
+      },
+          {
+            "category": "Data Engineering",
+            "question": "Quel type de base de données est conçu pour supporter des transactions ACID ?",
+            "options": [
+              "Base de données relationnelle",
+              "Base de données vinaigrée",
+              "Base de données sodique",
+              "Base de données acide-base"
+            ],
+            "correct_answer": "Base de données relationnelle"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel service cloud est utilisé pour l'entreposage de données massif et les analyses sur Google Cloud Platform ?",
+            "options": [
+              "BigQuery",
+              "BigQuestion",
+              "BigAnswer",
+              "BigDeal"
+            ],
+            "correct_answer": "BigQuery"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quelle est la fonction principale d'un ETL dans le traitement des données ?",
+            "options": [
+              "Extraire, Transformer, Charger",
+              "Extrait, Thé, Limonade",
+              "Examine, Tape, Lie",
+              "Excuse, Transport, Lance"
+            ],
+            "correct_answer": "Extraire, Transformer, Charger"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel outil permet de gérer les configurations de clusters Hadoop ?",
+            "options": [
+              "Apache Zookeeper",
+              "Apache Zoo",
+              "Apache Zookeeperoo",
+              "Apache Zoolander"
+            ],
+            "correct_answer": "Apache Zookeeper"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel type de stockage est souvent utilisé pour les data lakes ?",
+            "options": [
+              "Stockage objet",
+              "Stockage oblong",
+              "Stockage obligataire",
+              "Stockage obscur"
+            ],
+            "correct_answer": "Stockage objet"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel service AWS permet d'exécuter des requêtes SQL sur des données stockées dans Amazon S3 ?",
+            "options": [
+              "Amazon Athena",
+              "Amazon Artemis",
+              "Amazon Apollo",
+              "Amazon Ares"
+            ],
+            "correct_answer": "Amazon Athena"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le principal avantage des bases de données en mémoire comme Redis ?",
+            "options": [
+              "Vitesse",
+              "Saveur",
+              "Souplesse",
+              "Style"
+            ],
+            "correct_answer": "Vitesse"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quelle est la méthode de partitionnement des données par hachage ?",
+            "options": [
+              "Consistent hashing",
+              "Constant hashing",
+              "Consonant hashing",
+              "Consommé hashing"
+            ],
+            "correct_answer": "Consistent hashing"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel outil est utilisé pour le traitement des flux de données avec une faible latence ?",
+            "options": [
+              "Apache Storm",
+              "Apache Thunder",
+              "Apache Lightning",
+              "Apache Tornado"
+            ],
+            "correct_answer": "Apache Storm"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel langage est souvent utilisé pour les scripts d'automatisation et de manipulation de données ?",
+            "options": [
+              "Bash",
+              "Crash",
+              "Slash",
+              "Flash"
+            ],
+            "correct_answer": "Bash"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le principal avantage des bases de données colonnaires pour l'analytique ?",
+            "options": [
+              "Performance des requêtes",
+              "Performance des spectacles",
+              "Performance des sonates",
+              "Performance des scies"
+            ],
+            "correct_answer": "Performance des requêtes"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel outil est utilisé pour gérer les workflows de données dans des pipelines ETL ?",
+            "options": [
+              "Apache Oozie",
+              "Apache Snoozie",
+              "Apache Woozie",
+              "Apache Boozie"
+            ],
+            "correct_answer": "Apache Oozie"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel service de Google Cloud est utilisé pour le stockage de données structurées dans des tables SQL ?",
+            "options": [
+              "Cloud Spanner",
+              "Cloud Spinner",
+              "Cloud Splatter",
+              "Cloud Sparkler"
+            ],
+            "correct_answer": "Cloud Spanner"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel système distribué est conçu pour la gestion des gros volumes de logs ?",
+            "options": [
+              "Elasticsearch",
+              "Elastigirl",
+              "Elasticband",
+              "Elastico"
+            ],
+            "correct_answer": "Elasticsearch"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quelle est la principale caractéristique d'un data warehouse par rapport à une base de données transactionnelle ?",
+            "options": [
+              "Optimisé pour les requêtes analytiques",
+              "Optimisé pour les quêtes épiques",
+              "Optimisé pour les scènes dramatiques",
+              "Optimisé pour les comédies musicales"
+            ],
+            "correct_answer": "Optimisé pour les requêtes analytiques"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le processus de réplication des données entre plusieurs bases de données pour assurer la haute disponibilité ?",
+            "options": [
+              "Répliquation",
+              "Replimentation",
+              "Réplicache",
+              "Répliques-à-tout"
+            ],
+            "correct_answer": "Répliquation"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel outil est couramment utilisé pour l'ingestion de données en temps réel dans des systèmes de big data ?",
+            "options": [
+              "Apache Flume",
+              "Apache Floom",
+              "Apache Bloom",
+              "Apache Gloom"
+            ],
+            "correct_answer": "Apache Flume"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le principal avantage des bases de données graphes comme Neo4j ?",
+            "options": [
+              "Modélisation des relations complexes",
+              "Modélisation des galeries d'art",
+              "Modélisation des courbes de croissance",
+              "Modélisation des sentiments"
+            ],
+            "correct_answer": "Modélisation des relations complexes"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel outil est utilisé pour l'intégration de données massives dans Hadoop via SQL ?",
+            "options": [
+              "Apache Sqoop",
+              "Apache Scoop",
+              "Apache Loop",
+              "Apache Hoop"
+            ],
+            "correct_answer": "Apache Sqoop"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quelle est la technologie de stockage de données qui permet de stocker et de traiter des ensembles de données massifs ?",
+            "options": [
+              "Data Lake",
+              "Data Pond",
+              "Data River",
+              "Data Ocean"
+            ],
+            "correct_answer": "Data Lake"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel service AWS est utilisé pour la gestion des bases de données relationnelles en cloud ?",
+            "options": [
+              "Amazon RDS",
+              "Amazon TDS",
+              "Amazon PDS",
+              "Amazon FDS"
+            ],
+            "correct_answer": "Amazon RDS"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le principal avantage d'utiliser des clusters Kubernetes pour les applications data engineering ?",
+            "options": [
+              "Scalabilité",
+              "Stabilité",
+              "Flexibilité",
+              "Elasticité"
+            ],
+            "correct_answer": "Scalabilité"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel outil est utilisé pour la gestion et le déploiement de clusters Hadoop dans le cloud AWS ?",
+            "options": [
+              "Amazon EMR",
+              "Amazon EWR",
+              "Amazon ERR",
+              "Amazon EPR"
+            ],
+            "correct_answer": "Amazon EMR"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quelle est la technologie de stockage en colonnes optimisée pour l'analytique dans Hadoop ?",
+            "options": [
+              "Apache HBase",
+              "Apache HBus",
+              "Apache HBear",
+              "Apache HBook"
+            ],
+            "correct_answer": "Apache HBase"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil open-source de gestion des données de série temporelle dans des clusters distribués ?",
+            "options": [
+              "Apache Druid",
+              "Apache Droid",
+              "Apache Druide",
+              "Apache Drill"
+            ],
+            "correct_answer": "Apache Druid"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil de streaming de données utilisé pour la gestion des flux et le traitement en temps réel ?",
+            "options": [
+              "Apache Kafka Streams",
+              "Apache Kettle Streams",
+              "Apache Kitten Streams",
+              "Apache Kale Streams"
+            ],
+            "correct_answer": "Apache Kafka Streams"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil de gestion des clusters Apache Hadoop utilisé pour l'administration et le monitoring ?",
+            "options": [
+              "Cloudera Manager",
+              "Cloudera Manger",
+              "Cloudera Mountaineer",
+              "Cloudera Magician"
+            ],
+            "correct_answer": "Cloudera Manager"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel outil de gestion des métadonnées est utilisé pour la découverte et la gouvernance des données ?",
+            "options": [
+              "Apache Atlas",
+              "Apache Atlas Shrugged",
+              "Apache Atlas Mountains",
+              "Apache Atlas Sees"
+            ],
+            "correct_answer": "Apache Atlas"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil d'orchestration de données qui permet de gérer des pipelines de traitement de données complexes ?",
+            "options": [
+              "Apache Beam",
+              "Apache Beem",
+              "Apache Boom",
+              "Apache Balloon"
+            ],
+            "correct_answer": "Apache Beam"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil d'analyse de grandes quantités de données basé sur SQL utilisé avec Hadoop ?",
+            "options": [
+              "Apache Impala",
+              "Apache Gazelle",
+              "Apache Jaguar",
+              "Apache Panther"
+            ],
+            "correct_answer": "Apache Impala"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le principal avantage de l'utilisation de Docker pour les applications de data engineering ?",
+            "options": [
+              "Portabilité",
+              "Durabilité",
+              "Responsabilité",
+              "Flexibilité"
+            ],
+            "correct_answer": "Portabilité"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le service AWS utilisé pour la transformation et la préparation de données à grande échelle ?",
+            "options": [
+              "AWS Glue",
+              "AWS Clue",
+              "AWS Blue",
+              "AWS Stew"
+            ],
+            "correct_answer": "AWS Glue"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel outil de l'écosystème Hadoop est utilisé pour la gestion et l'orchestration des workflows ?",
+            "options": [
+              "Apache NiFi",
+              "Apache HiFi",
+              "Apache WiFi",
+              "Apache TiFi"
+            ],
+            "correct_answer": "Apache NiFi"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quelle est la solution de stockage distribuée utilisée pour les fichiers volumineux dans Hadoop ?",
+            "options": [
+              "HDFS",
+              "HDD",
+              "HDDVD",
+              "HDMI"
+            ],
+            "correct_answer": "HDFS"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil de traitement de données massives développé par Google et open-source par Apache ?",
+            "options": [
+              "Apache Beam",
+              "Apache Laser",
+              "Apache Thunder",
+              "Apache Flash"
+            ],
+            "correct_answer": "Apache Beam"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le principal outil utilisé pour la gestion des versions et des changements de schémas de bases de données ?",
+            "options": [
+              "Liquibase",
+              "Waterbase",
+              "Solidbase",
+              "Airbase"
+            ],
+            "correct_answer": "Liquibase"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil de gestion des versions des packages de logiciels utilisé pour les projets data engineering en Python ?",
+            "options": [
+              "Pipenv",
+              "Pitfall",
+              "Pitstop",
+              "Pipline"
+            ],
+            "correct_answer": "Pipenv"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le principal avantage des systèmes de fichiers distribués comme HDFS ?",
+            "options": [
+              "Tolérance aux pannes",
+              "Tolérance au lactose",
+              "Tolérance au gluten",
+              "Tolérance au bruit"
+            ],
+            "correct_answer": "Tolérance aux pannes"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le principal avantage de l'utilisation de Terraform pour l'infrastructure cloud ?",
+            "options": [
+              "Infrastructure as Code",
+              "Infrastructure en chaussettes",
+              "Infrastructure de chocolat",
+              "Infrastructure en béton"
+            ],
+            "correct_answer": "Infrastructure as Code"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel outil est utilisé pour le traitement distribué et la manipulation des données en lots et en flux ?",
+            "options": [
+              "Apache Spark",
+              "Apache Ember",
+              "Apache Flame",
+              "Apache Bonfire"
+            ],
+            "correct_answer": "Apache Spark"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil de collecte et d'analyse de logs en temps réel utilisé avec Elasticsearch ?",
+            "options": [
+              "Logstash",
+              "Logcrash",
+              "Logmash",
+              "Logdash"
+            ],
+            "correct_answer": "Logstash"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le principal avantage de l'utilisation de microservices pour les applications data engineering ?",
+            "options": [
+              "Scalabilité",
+              "Probabilité",
+              "Flexibilité",
+              "Durabilité"
+            ],
+            "correct_answer": "Scalabilité"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le service AWS utilisé pour orchestrer les workflows de données et les pipelines ETL ?",
+            "options": [
+              "AWS Step Functions",
+              "AWS Dance Moves",
+              "AWS Quick Steps",
+              "AWS Ballroom"
+            ],
+            "correct_answer": "AWS Step Functions"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil open-source utilisé pour le monitoring et l'alerte des applications et infrastructures ?",
+            "options": [
+              "Prometheus",
+              "Hermes",
+              "Zeus",
+              "Apollo"
+            ],
+            "correct_answer": "Prometheus"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil de gestion des données de configuration et des secrets dans des environnements distribués ?",
+            "options": [
+              "HashiCorp Vault",
+              "HashiCorp Safe",
+              "HashiCorp Box",
+              "HashiCorp Locker"
+            ],
+            "correct_answer": "HashiCorp Vault"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est le service AWS utilisé pour la migration des bases de données vers le cloud ?",
+            "options": [
+              "AWS DMS",
+              "AWS TMS",
+              "AWS FMS",
+              "AWS HMS"
+            ],
+            "correct_answer": "AWS DMS"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quel est l'outil de gestion des données de série temporelle développé par InfluxData ?",
+            "options": [
+              "InfluxDB",
+              "InfluxTea",
+              "InfluxTV",
+              "InfluxPC"
+            ],
+            "correct_answer": "InfluxDB"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Le gobelin data engineer doit choisir une base de données pour stocker des transactions financières. Quelle base de données devrait-il utiliser pour garantir des transactions ACID?",
+            "options": [
+              "PostgreSQL",
+              "GoblinSQL",
+              "OrcSQL",
+              "TrollSQL"
+            ],
+            "correct_answer": "PostgreSQL"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour un projet de data warehousing, le gobelin doit choisir un outil de Google Cloud Platform. Quel service est le mieux adapté?",
+            "options": [
+              "BigQuery",
+              "SmallQuery",
+              "GoblinQuery",
+              "GiantQuery"
+            ],
+            "correct_answer": "BigQuery"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Le gobelin doit déplacer des données de plusieurs sources vers une destination centrale. Quel outil ETL devrait-il utiliser?",
+            "options": [
+              "Apache NiFi",
+              "Goblin Flow",
+              "Troll Transfer",
+              "Orc Orchestrator"
+            ],
+            "correct_answer": "Apache NiFi"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour gérer des clusters Hadoop, quel outil le gobelin devrait-il choisir?",
+            "options": [
+              "Apache Zookeeper",
+              "Goblin Keeper",
+              "Troll Tracker",
+              "Orc Overseer"
+            ],
+            "correct_answer": "Apache Zookeeper"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Le gobelin doit stocker des données brutes pour l'analyse. Quel type de stockage est le plus approprié?",
+            "options": [
+              "Data Lake",
+              "Data Pond",
+              "Goblin Pool",
+              "Troll Trough"
+            ],
+            "correct_answer": "Data Lake"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour analyser des données stockées dans Amazon S3, quel service AWS devrait utiliser le gobelin?",
+            "options": [
+              "Amazon Athena",
+              "Goblin Scholar",
+              "Troll Tutor",
+              "Orc Oracle"
+            ],
+            "correct_answer": "Amazon Athena"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Le gobelin doit choisir une base de données en mémoire pour des performances rapides. Quelle base de données choisir?",
+            "options": [
+              "Redis",
+              "GoblinRAM",
+              "TrollCache",
+              "OrcStore"
+            ],
+            "correct_answer": "Redis"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour répartir les données de manière équilibrée, quelle méthode de partitionnement le gobelin devrait-il utiliser?",
+            "options": [
+              "Consistent hashing",
+              "Goblin hashing",
+              "Troll hashing",
+              "Orc hashing"
+            ],
+            "correct_answer": "Consistent hashing"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour un traitement de flux de données en temps réel, quel outil le gobelin devrait-il choisir?",
+            "options": [
+              "Apache Storm",
+              "Goblin Storm",
+              "Troll Storm",
+              "Orc Storm"
+            ],
+            "correct_answer": "Apache Storm"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Le gobelin doit écrire des scripts d'automatisation. Quel langage est le plus couramment utilisé?",
+            "options": [
+              "Bash",
+              "GoblinScript",
+              "TrollCode",
+              "OrcShell"
+            ],
+            "correct_answer": "Bash"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour des requêtes analytiques rapides, quel type de base de données le gobelin devrait-il utiliser?",
+            "options": [
+              "Base de données colonnaire",
+              "Base de données goblinaire",
+              "Base de données trollinaire",
+              "Base de données orcinaire"
+            ],
+            "correct_answer": "Base de données colonnaire"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour orchestrer des workflows de données dans un pipeline ETL, quel outil le gobelin devrait-il utiliser?",
+            "options": [
+              "Apache Oozie",
+              "Goblin Oozie",
+              "Troll Oozie",
+              "Orc Oozie"
+            ],
+            "correct_answer": "Apache Oozie"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour stocker des données structurées dans des tables SQL sur Google Cloud, quel service devrait-il choisir?",
+            "options": [
+              "Cloud Spanner",
+              "Goblin Spanner",
+              "Troll Spanner",
+              "Orc Spanner"
+            ],
+            "correct_answer": "Cloud Spanner"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour gérer de gros volumes de logs, quel système distribué le gobelin devrait-il choisir?",
+            "options": [
+              "Elasticsearch",
+              "GoblinSearch",
+              "TrollSearch",
+              "OrcSearch"
+            ],
+            "correct_answer": "Elasticsearch"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Quelle caractéristique est essentielle pour un data warehouse par rapport à une base de données transactionnelle?",
+            "options": [
+              "Optimisé pour les requêtes analytiques",
+              "Optimisé pour les gobelins",
+              "Optimisé pour les trolls",
+              "Optimisé pour les orcs"
+            ],
+            "correct_answer": "Optimisé pour les requêtes analytiques"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour assurer la haute disponibilité des données, quel processus le gobelin devrait-il utiliser?",
+            "options": [
+              "Répliquation",
+              "Goblin Copie",
+              "Troll Cloning",
+              "Orc Duplication"
+            ],
+            "correct_answer": "Répliquation"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour l'ingestion de données en temps réel dans des systèmes de big data, quel outil le gobelin devrait-il utiliser?",
+            "options": [
+              "Apache Flume",
+              "Goblin Funnel",
+              "Troll Tube",
+              "Orc Stream"
+            ],
+            "correct_answer": "Apache Flume"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour modéliser des relations complexes, quel type de base de données devrait-il utiliser?",
+            "options": [
+              "Base de données graphe",
+              "Base de données goblinaire",
+              "Base de données trollinaire",
+              "Base de données orcinaire"
+            ],
+            "correct_answer": "Base de données graphe"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour l'intégration de données massives dans Hadoop via SQL, quel outil devrait-il utiliser?",
+            "options": [
+              "Apache Sqoop",
+              "Goblin Scoop",
+              "Troll Scoop",
+              "Orc Scoop"
+            ],
+            "correct_answer": "Apache Sqoop"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour stocker et traiter des ensembles de données massifs, quelle technologie devrait-il choisir?",
+            "options": [
+              "Data Lake",
+              "Goblin Lake",
+              "Troll Lake",
+              "Orc Lake"
+            ],
+            "correct_answer": "Data Lake"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour gérer des bases de données relationnelles en cloud sur AWS, quel service devrait-il choisir?",
+            "options": [
+              "Amazon RDS",
+              "Goblin RDS",
+              "Troll RDS",
+              "Orc RDS"
+            ],
+            "correct_answer": "Amazon RDS"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour les applications data engineering nécessitant une grande scalabilité, quel outil le gobelin devrait-il utiliser?",
+            "options": [
+              "Kubernetes",
+              "Goblinetes",
+              "Trollnetes",
+              "Orcnetes"
+            ],
+            "correct_answer": "Kubernetes"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour déployer et gérer des clusters Hadoop dans le cloud AWS, quel service devrait-il utiliser?",
+            "options": [
+              "Amazon EMR",
+              "Goblin EMR",
+              "Troll EMR",
+              "Orc EMR"
+            ],
+            "correct_answer": "Amazon EMR"
+          },
+          {
+            "category": "Data Engineering",
+            "question": "Pour stocker des données optimisées pour l'analytique dans Hadoop, quel outil devrait-il choisir?",
+            "options": [
+              "Apache HBase",
+              "Goblin HBase",
+              "Troll HBase",
+              "Orc HBase"
+            ],
+            "correct_answer": "Apache HBase"
+          }
+        ]
+      }
+      
+  
+  

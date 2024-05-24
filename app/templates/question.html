@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+    {% include 'logged_header.html' %}
+    <h1>Quiz</h1>
+    <form method="post" action="{{ url_for('quiz') }}">
+        <div>
+            <p>{{ question.question }}</p>
+            <label><input type="radio" name="answer" value="{{ question.aws1 }}"> 1: {{ question.aws1 }}</label><br>
+            <label><input type="radio" name="answer" value="{{ question.aws2 }}"> 2: {{ question.aws2 }}</label><br>
+            <label><input type="radio" name="answer" value="{{ question.aws3 }}"> 3: {{ question.aws3 }}</label><br>
+            <label><input type="radio" name="answer" value="{{ question.aws4 }}"> 4: {{ question.aws4 }}</label><br>
+        </div>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

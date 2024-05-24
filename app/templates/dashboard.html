@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+    {% include 'logged_header.html' %}
+    <div id="chart"></div>
+    <div id="quiz-chart"></div>
+
+    <script>
+
+        var chartOptions = {
+            series: {{ chart_data.series | tojson }},
+            chart: {
+                type: 'bar',
+                height: 350
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '55%',
+                    endingShape: 'rounded'
+                },
+            },
+            xaxis: {
+                categories: {{ chart_data.categories | tojson }}
+            },
+            yaxis: {
+                title: {
+                    text: 'Nombre'
+                }
+            },
+            fill: {
+                opacity: 1
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            }
+        };
+        
+        var quizChartOptions = {
+            series: {{ quiz_chart_data.series | tojson }},
+            chart: {
+                type: 'line',
+                height: 350
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true
+                    },
+                    enableMouseTracking: false
+                }
+            },
+            xaxis: {
+                categories: {{ quiz_chart_data.categories | tojson }}
+            },
+            yaxis: {
+                title: {
+                    text: 'Pourcentage de bonnes réponses (%)'
+                }
+            },
+            fill: {
+                opacity: 1
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val + "%";
+                    }
+                }
+            }
+        };
+        
+        var chart = new ApexCharts(document.querySelector("#chart"), chartOptions);
+        chart.render();
+
+        var quizChart = new ApexCharts(document.querySelector("#quiz-chart"), quizChartOptions);
+        quizChart.render();
+    </script>
+</body>
+</html>

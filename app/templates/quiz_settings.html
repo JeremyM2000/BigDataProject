@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+    {% include 'logged_header.html' %}
+    <h1>Configure ton Quiz</h1>
+    <div>
+        <h3>Joueurs :</h3>
+        <ul>
+            {% for player in players %}
+                <li>{{ player }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <h3>Ajouter un joueur :</h3>
+        <form method="POST" action="{{ url_for('add_player') }}">
+            <div>
+                <h4>Pseudo :</h4>
+                <input type="text" name="player" required>
+            </div>
+            <button type="submit">Ajouter</button>
+        </form>
+    </div>
+    <div>
+        <h4>Taille du quiz : </h4>
+        <form method="POST" action="{{ url_for('start_quiz') }}">
+            <input type="number" id="questions_per_player" name="questions_per_player" step="1" required min="1" value="{{ questions_per_player }}">
+            <p>question(s) par joueur</p>
+            <button type="submit">Commencer le quiz</button>
+        </form>
+    </div>
+</body>
+</html>
