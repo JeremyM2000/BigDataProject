@@ -49,14 +49,13 @@
                 };
 
                 mediaRecorder.onstop = () => {
-                    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    const audioBlob = new Blob(audioChunks, { type: mediaRecorder.mimeType });
                     audioPlayer.src = URL.createObjectURL(audioBlob);
-                    audioChunks = [];  // Clear the chunks for next recording
+                    audioChunks = [];
                     
                     // Send the blob to the server
                     const formData = new FormData();
-                    formData.append('audioFile', audioBlob);
-
+                    formData.set('audioFile', audioBlob, 'input_sample.webm')
                     fetch('/upload-audio', {
                         method: 'POST',
                         body: formData
