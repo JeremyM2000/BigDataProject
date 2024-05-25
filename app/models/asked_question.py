@@ -1,4 +1,4 @@
-from app.models.user import db
+from app import db
 
 class AskedQuestion(db.Model):
     __tablename__ = 'asked_questions'

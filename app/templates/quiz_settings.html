@@ -17,7 +17,7 @@
                 <li>
                     {{ player }}
                     {% if not loop.first %}
-                        <a href="{{ url_for('remove_player', player_name=player) }}" class="remove-player"><i class="fas fa-times"></i></a>
+                        <a href="{{ url_for('quiz.remove_player', player_name=player) }}" class="remove-player"><i class="fas fa-times"></i></a>
                     {% endif %}
                 </li>
             {% endfor %}
@@ -25,7 +25,7 @@
     </div>
     <div>
         <h3>Ajouter un joueur :</h3>
-        <form method="POST" action="{{ url_for('add_player') }}">
+        <form method="POST" action="{{ url_for('quiz.add_player') }}">
             <div>
                 <h4>Pseudo :</h4>
                 <input type="text" name="player" required>
@@ -35,7 +35,7 @@
     </div>
     <div>
         <h4>Taille du quiz : </h4>
-        <form method="POST" action="{{ url_for('start_quiz') }}">
+        <form method="POST" action="{{ url_for('quiz.start_quiz') }}">
             <input type="number" id="questions_per_player" name="questions_per_player" step="1" required min="1" value="{{ questions_per_player }}">
             <p>question(s) par joueur</p>
             <button type="submit">Commencer le quiz</button>

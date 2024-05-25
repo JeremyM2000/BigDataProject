@@ -1,15 +1,19 @@
 import os
+from urllib.parse import quote_plus
 
 SECRET_KEY = os.urandom(32)
 
-# Grabs the folder where the script runs.
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-# Enable debug mode.
 DEBUG = True
 
-# Connect to the database
-SQLALCHEMY_DATABASE_URI = 'mysql://root:rootroot@MacBook-Pro-de-Servan.local/gobelin_exam'
+db_user = 'root'
+db_password = 'rootroot'
+db_host = 'MacBook-Pro-de-Servan.local'
+db_name = 'gobelin_exam'
 
-# Turn off the Flask-SQLAlchemy event system and warning
+db_password_encoded = quote_plus(db_password)
+
+SQLALCHEMY_DATABASE_URI = f'mysql://{db_user}:{db_password_encoded}@{db_host}/{db_name}'
+
 SQLALCHEMY_TRACK_MODIFICATIONS = False

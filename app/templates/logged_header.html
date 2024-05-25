@@ -1,11 +1,11 @@
 <header>
     <nav>
         <div class="left">
-            <a href="{{ url_for('home') }}">Accueil</a>
+            <a href="{{ url_for('quiz.home') }}">Accueil</a>
         </div>
         <div class="right">
-            <a href="{{ url_for('dashboard') }}">Dashboard</a>
-            <a href="{{ url_for('logout') }}">Se déconnecter</a>
+            <a href="{{ url_for('dashboard.dashboard') }}">Dashboard</a>
+            <a href="{{ url_for('auth.logout') }}">Se déconnecter</a>
         </div>
     </nav>
 </header>

@@ -9,7 +9,7 @@
 <body>
     {% include 'logged_header.html' %}
     <h1>Quiz</h1>
-    <form method="post" action="{{ url_for('quiz') }}">
+    <form method="post" action="{{ url_for('quiz.quiz') }}">
         <div>
             <h3>Question pour: {{ player }}</h3>
             <p>{{ question.question }}</p>

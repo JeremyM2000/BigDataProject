@@ -14,7 +14,7 @@
             var timer = setInterval(function() {
                 if (timeLeft <= 0) {
                     clearInterval(timer);
-                    window.location.href = "{{ url_for('quiz') }}";
+                    window.location.href = "{{ url_for('quiz.quiz') }}";
                 } else {
                     countdownElement.innerHTML = timeLeft + " secondes restantes";
                 }
