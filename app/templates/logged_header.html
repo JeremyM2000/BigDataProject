@@ -1,11 +1,22 @@
-<header>
-    <nav>
-        <div class="left">
-            <a href="{{ url_for('quiz.home') }}">Accueil</a>
-        </div>
-        <div class="right">
-            <a href="{{ url_for('dashboard.dashboard') }}">Dashboard</a>
-            <a href="{{ url_for('auth.logout') }}">Se déconnecter</a>
-        </div>
-    </nav>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="left text-lg font-semibold text-gray-900">
+                <a href="{{ url_for('quiz.home') }}" class="hover:text-blue-500">Accueil</a>
+            </div>
+            <div class="right flex space-x-4">
+                <a href="{{ url_for('dashboard.dashboard') }}" class="text-gray-700 hover:text-blue-500">Dashboard</a>
+                <a href="{{ url_for('auth.logout') }}" class="text-gray-700 hover:text-blue-500">Se déconnecter</a>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

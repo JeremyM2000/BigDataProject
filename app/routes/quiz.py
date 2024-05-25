@@ -139,6 +139,6 @@ def quiz_summary():
             'question_details': results
         })
 
-    session.pop('players', None)
+    session['players'] = [session['user_name']]
 
     return render_template('quiz_summary.html', player_scores=player_scores)

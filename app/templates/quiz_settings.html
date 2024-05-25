@@ -4,42 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuration Quiz</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
     {% include 'logged_header.html' %}
-    <h1>Configure ton Quiz</h1>
-    <div>
-        <h3>Joueurs :</h3>
-        <ul>
-            {% for player in players %}
-                <li>
-                    {{ player }}
-                    {% if not loop.first %}
-                        <a href="{{ url_for('quiz.remove_player', player_name=player) }}" class="remove-player"><i class="fas fa-times"></i></a>
-                    {% endif %}
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-    <div>
-        <h3>Ajouter un joueur :</h3>
-        <form method="POST" action="{{ url_for('quiz.add_player') }}">
-            <div>
-                <h4>Pseudo :</h4>
-                <input type="text" name="player" required>
-            </div>
-            <button type="submit">Ajouter</button>
-        </form>
-    </div>
-    <div>
-        <h4>Taille du quiz : </h4>
-        <form method="POST" action="{{ url_for('quiz.start_quiz') }}">
-            <input type="number" id="questions_per_player" name="questions_per_player" step="1" required min="1" value="{{ questions_per_player }}">
-            <p>question(s) par joueur</p>
-            <button type="submit">Commencer le quiz</button>
-        </form>
+    <h1 class="text-3xl font-bold text-center mt-8 mb-4">Configure ton Quiz</h1>
+    <div class="container mx-auto">
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold mb-2">Joueurs :</h3>
+            <ul>
+                {% for player in players %}
+                    <li class="mb-2">
+                        {{ player }}
+                        {% if not loop.first %}
+                            <a href="{{ url_for('quiz.remove_player', player_name=player) }}" class="remove-player ml-2"><i class="fas fa-times"></i></a>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold mb-2">Ajouter un joueur :</h3>
+            <form method="POST" action="{{ url_for('quiz.add_player') }}" class="flex items-center">
+                <div class="mr-4">
+                    <h4 class="mb-2">Pseudo :</h4>
+                    <input type="text" name="player" required class="border border-gray-300 rounded-md px-4 py-2">
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ajouter</button>
+            </form>
+        </div>
+        <div>
+            <h4 class="text-lg font-semibold mb-2">Taille du quiz :</h4>
+            <form method="POST" action="{{ url_for('quiz.start_quiz') }}" class="flex items-center">
+                <input type="number" id="questions_per_player" name="questions_per_player" step="1" required min="1" value="{{ questions_per_player }}" class="border border-gray-300 rounded-md px-4 py-2 mr-2 w-20">
+                <p class="text-gray-600">question(s) par joueur</p>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4">Commencer le quiz</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>

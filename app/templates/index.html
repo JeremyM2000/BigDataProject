@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 </head>
-<body>
-    <header>
-        <div class="left">
-            <a href="{{ url_for('main.index') }}">Accueil</a>
-        </div>
-        <div class="right">
-            <a href="{{ url_for('auth.signup') }}">Créer un compte</a>
-            <a href="{{ url_for('auth.login') }}">Se connecter</a>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-lg font-semibold text-gray-900">
+                <a href="{{ url_for('main.index') }}" class="hover:text-blue-500">Accueil</a>
+            </div>
+            <div>
+                <a href="{{ url_for('auth.signup') }}" class="text-gray-700 hover:text-blue-500 mx-2">Créer un compte</a>
+                <a href="{{ url_for('auth.login') }}" class="text-gray-700 hover:text-blue-500 mx-2">Se connecter</a>
+            </div>
         </div>
     </header>
 </body>

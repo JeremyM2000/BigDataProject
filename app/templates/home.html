@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
     {% include 'logged_header.html' %}
-    <h1>Bonjour {{ user_name }} !</h1>
-    <div>
-        <p>Lance un Quiz et deviens un Master Gobelin</p>
-        <a href="{{ url_for('quiz.set_quiz') }}">Commencer un Quiz</a>
+    <div class="container mx-auto mt-8 p-4">
+        <h1 class="text-3xl font-bold text-center text-gray-900">Bonjour {{ user_name }} !</h1>
+        <div class="mt-6 text-center">
+            <p class="text-lg text-gray-700">Lance un Quiz et deviens un Master Gobelin</p>
+            <a href="{{ url_for('quiz.set_quiz') }}" class="mt-4 inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Commencer un Quiz</a>
+        </div>
     </div>
 </body>
 </html>

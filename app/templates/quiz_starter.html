@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Starter</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <script>
         function startTimer() {
@@ -24,15 +24,15 @@
         window.onload = startTimer;
     </script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
     {% include 'logged_header.html' %}
-    <h1>Ton Quiz va commencer</h1>
-    <ul>
+    <h1 class="text-3xl font-bold text-center my-8">Ton Quiz va commencer</h1>
+    <ul class="container mx-auto">
         {% for player in players %}
-            <li>{{ player }}</li>
+            <li class="mb-2">{{ player }}</li>
         {% endfor %}
     </ul>
-    <p>{{ questions_per_player }}</p>
-    <p id="countdown">5 secondes restantes</p>
+    <p class="text-center my-4">{{ questions_per_player }}</p>
+    <p id="countdown" class="text-center text-xl font-semibold">5 secondes restantes</p>
 </body>
 </html>
