@@ -14,7 +14,12 @@
         <h3>Joueurs :</h3>
         <ul>
             {% for player in players %}
-                <li>{{ player }}</li>
+                <li>
+                    {{ player }}
+                    {% if not loop.first %}
+                        <a href="{{ url_for('remove_player', player_name=player) }}" class="remove-player"><i class="fas fa-times"></i></a>
+                    {% endif %}
+                </li>
             {% endfor %}
         </ul>
     </div>

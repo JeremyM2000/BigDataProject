@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Summary</title>
 </head>
 <body>
     {% include 'logged_header.html' %}
-    <h1>Résumé du Quiz</h1>
-    <p>Score: {{ score }}</p>
-    <h2>Détails des questions:</h2>
-    <ul>
-        {% for question in question_details %}
-            <li>
-                <p>Question: {{ question.question }}</p>
-                <p>Réponse sélectionné: {% if question.selected_answer %}Correct{% else %}Incorrect{% endif %}</p>
-                <p>Bonne réponse: {{ question.correct_answer }}</p>
-            </li>
-        {% endfor %}
-    </ul>
+    <h1>Résumé du quiz</h1>
+    {% for player in player_scores %}
+        <h2>Score de {{ player.player }}: {{ player.score }}</h2>
+        <ul>
+            {% for question in player.question_details %}
+                <li>
+                    <strong>Question:</strong> {{ question.question }}<br>
+                    <strong>Réponse sélectionnée:</strong> {{ question.selected_answer }}<br>
+                    <strong>Réponse correct:</strong> {{ question.correct_answer }}<br>
+                    <strong>Resultat:</strong> {{ 'Correct' if question.is_correct else 'Incorrect' }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
 </body>
 </html>

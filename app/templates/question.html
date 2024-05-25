@@ -11,6 +11,7 @@
     <h1>Quiz</h1>
     <form method="post" action="{{ url_for('quiz') }}">
         <div>
+            <h3>Question pour: {{ player }}</h3>
             <p>{{ question.question }}</p>
             <label><input type="radio" name="answer" value="{{ question.aws1 }}"> 1: {{ question.aws1 }}</label><br>
             <label><input type="radio" name="answer" value="{{ question.aws2 }}"> 2: {{ question.aws2 }}</label><br>
