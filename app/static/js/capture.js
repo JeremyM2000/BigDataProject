@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             };
 
-        let secondsRemaining = 5;
+        let secondsRemaining = 4;
         countdownElement.style.fontSize = '4rem';
         countdownElement.style.textAlign = 'center';
         countdownElement.innerText = `${secondsRemaining} `;
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Laisser le temps de lire 
-    const delayToRead = 4000;
+    const delayToRead = 5000;
     setTimeout(() => {
         startRecording();
     }, delayToRead);
