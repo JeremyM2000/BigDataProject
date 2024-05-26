@@ -3,7 +3,7 @@ from models.question import Question
 from models.asked_question import AskedQuestion
 from sqlalchemy import func
 import random
-from app import db
+from database import db
 
 quiz_bp = Blueprint('quiz', __name__)
 

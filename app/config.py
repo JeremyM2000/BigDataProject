@@ -10,7 +10,7 @@ DEBUG = True
 db_user = 'root'
 db_password = 'rootroot'
 db_host = 'MacBook-Pro-de-Servan.local'
-db_name = 'gobelin_exam'
+db_name = 'goblin_exam'
 
 db_password_encoded = quote_plus(db_password)
 

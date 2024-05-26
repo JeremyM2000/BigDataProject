@@ -1,10 +1,11 @@
 import json
 
-from app.models.question import Question
-from app.app import app, db
+from models.question import Question
+from app import app
+from database import db
 
 def seed_questions():
-    with open('app/data/questions.json', 'r') as file:
+    with open('data/questions.json', 'r') as file:
         data = json.load(file)
         for item in data['questions']:
             question = item['question']
