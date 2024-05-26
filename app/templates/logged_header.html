@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation</title>
+    <title>Quiz Settings</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+        .bg-custom-green {
+            background-color: #758cfe;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <header class="bg-white shadow-md">
+<body class="bg-green-100 text-white">
+    <header class="bg-custom-green shadow-md">
         <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-            <div class="left text-lg font-semibold text-gray-900">
-                <a href="{{ url_for('quiz.home') }}" class="hover:text-blue-500">Accueil</a>
+            <div class="left text-lg font-semibold text-white">
+                <a href="{{ url_for('quiz.home') }}" class="hover:text-yellow-400">Configure ton Quiz</a>
             </div>
             <div class="right flex space-x-4">
-                <a href="{{ url_for('dashboard.dashboard') }}" class="text-gray-700 hover:text-blue-500">Dashboard</a>
-                <a href="{{ url_for('auth.logout') }}" class="text-gray-700 hover:text-blue-500">Se déconnecter</a>
+                <a href="{{ url_for('dashboard.dashboard') }}" class="text-white hover:text-yellow-400">Dashboard</a>
+                <a href="{{ url_for('auth.logout') }}" class="text-white hover:text-yellow-400">Se déconnecter</a>
             </div>
         </nav>
     </header>

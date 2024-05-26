@@ -23,8 +23,16 @@
         }
         window.onload = startTimer;
     </script>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+        .bg-custom-green {
+            background-color: #40960d;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+<body class="bg-green-100 text-gray-800 flex flex-col min-h-screen">
     <div class="flex-grow">
         {% include 'logged_header.html' %}
         <h1 class="text-3xl font-bold text-center my-8">Ton Quiz va commencer</h1>

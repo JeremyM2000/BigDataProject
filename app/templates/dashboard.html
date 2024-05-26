@@ -6,8 +6,16 @@
     <title>Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+        .bg-custom-green {
+            background-color: #40960d;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-green-100 text-gray-800">
     {% include 'logged_header.html' %}
     <div class="container mx-auto p-6">
         <h1 class="text-3xl font-bold text-center text-gray-900 mb-6">Dashboard</h1>

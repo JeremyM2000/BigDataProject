@@ -7,9 +7,17 @@
     <title>Question</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+        .bg-custom-green {
+            background-color: #40960d;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+<body class="bg-green-100 text-gray-800 flex flex-col min-h-screen">
     {% include 'logged_header.html' %}
     <div class="container mx-auto mt-8 p-4 flex-grow">
         <h1 class="text-3xl font-bold text-center text-gray-900">Quiz</h1>
@@ -36,7 +44,7 @@
                         <span class="text-sm">4 : {{ question.aws4 }}</span>
                     </label>
                 </div>
-                <button class="hidden" type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Next</button>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Next</button>
             </form>
 
            <!-- <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" id="startButton">Start Capture</button> -->
