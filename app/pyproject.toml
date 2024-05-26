@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "app"
+version = "1.1.1"
+description = "Quiz using vocal command"
+authors = ["Pelle Servan"]
+license = "none"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+run = "run:app"
