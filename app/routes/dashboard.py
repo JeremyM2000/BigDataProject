@@ -11,8 +11,8 @@ def dashboard():
 
     nb_quiz = db.session.query(func.count(func.distinct(AskedQuestion.quiz_id))).filter_by(player_id=player_id).scalar()
 
-    worth_aws = AskedQuestion.query.filter_by(player_id=player_id, bool_aws=0).count()
-    good_aws = AskedQuestion.query.filter_by(player_id=player_id, bool_aws=1).count()
+    worth_aws = AskedQuestion.query.filter_by(player_id=player_id, bool_aws=1).count()
+    good_aws = AskedQuestion.query.filter_by(player_id=player_id, bool_aws=0).count()
     
     percentage_good_aws = (good_aws / (worth_aws + good_aws)) * 100 if (worth_aws + good_aws) != 0 else 0
     
