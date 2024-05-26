@@ -5,23 +5,26 @@
     <title>Quiz Summary</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
     {% include 'logged_header.html' %}
     <h1 class="text-3xl font-bold text-center my-8">Résumé du quiz</h1>
-    {% for player in player_scores %}
-        <div class="container mx-auto bg-white shadow-md rounded-md p-4 mb-8">
-            <h2 class="text-lg font-bold mb-4">Score de {{ player.player }}: {{ player.score }}</h2>
-            <ul>
-                {% for question in player.question_details %}
-                    <li class="mb-4">
-                        <strong>Question:</strong> {{ question.question }}<br>
-                        <strong>Réponse sélectionnée:</strong> {{ question.selected_answer }}<br>
-                        <strong>Réponse correct:</strong> {{ question.correct_answer }}<br>
-                        <strong>Resultat:</strong> <span class="{% if question.is_correct %}text-green-600{% else %}text-red-600{% endif %}">{% if question.is_correct %}Correct{% else %}Incorrect{% endif %}</span>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endfor %}
+    <div class="flex-grow">
+        {% for player in player_scores %}
+            <div class="container mx-auto bg-white shadow-md rounded-md p-4 mb-8">
+                <h2 class="text-lg font-bold mb-4">Score de {{ player.player }}: {{ player.score }}</h2>
+                <ul>
+                    {% for question in player.question_details %}
+                        <li class="mb-4">
+                            <strong>Question:</strong> {{ question.question }}<br>
+                            <strong>Réponse sélectionnée:</strong> {{ question.selected_answer }}<br>
+                            <strong>Réponse correct:</strong> {{ question.correct_answer }}<br>
+                            <strong>Resultat:</strong> <span class="{% if question.is_correct %}text-green-600{% else %}text-red-600{% endif %}">{% if question.is_correct %}Correct{% else %}Incorrect{% endif %}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </div>
+    {% include 'footer.html' %}
 </body>
 </html>

@@ -50,9 +50,11 @@ def remove_player(player_name):
 @quiz_bp.route('/start_quiz', methods=['GET', 'POST'])
 def start_quiz():
     questions_per_player = request.form['questions_per_player']
+    print(questions_per_player)
     session['questions_per_player'] = questions_per_player
     session['current_player_index'] = 0
-    return redirect(url_for('quiz.quiz'))
+    
+    return render_template('quiz_starter.html', questions_per_player=questions_per_player)
 
 @quiz_bp.route('/quiz', methods=['GET', 'POST'])
 def quiz():

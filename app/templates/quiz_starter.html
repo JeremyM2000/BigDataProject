@@ -24,15 +24,18 @@
         window.onload = startTimer;
     </script>
 </head>
-<body class="bg-gray-100 text-gray-800">
-    {% include 'logged_header.html' %}
-    <h1 class="text-3xl font-bold text-center my-8">Ton Quiz va commencer</h1>
-    <ul class="container mx-auto">
-        {% for player in players %}
-            <li class="mb-2">{{ player }}</li>
-        {% endfor %}
-    </ul>
-    <p class="text-center my-4">{{ questions_per_player }}</p>
-    <p id="countdown" class="text-center text-xl font-semibold">5 secondes restantes</p>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+    <div class="flex-grow">
+        {% include 'logged_header.html' %}
+        <h1 class="text-3xl font-bold text-center my-8">Ton Quiz va commencer</h1>
+        <ul class="container mx-auto">
+            {% for player in players %}
+                <li class="mb-2">{{ player }}</li>
+            {% endfor %}
+        </ul>
+        <p class="text-center my-4">{{ questions_per_player }}</p>
+        <p id="countdown" class="text-center text-xl font-semibold">5 secondes restantes</p>
+    </div>
+    {% include 'footer.html' %}
 </body>
 </html>

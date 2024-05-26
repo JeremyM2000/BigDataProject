@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
     <header class="bg-white shadow-md">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <div class="text-lg font-semibold text-gray-900">
@@ -19,5 +19,9 @@
             </div>
         </div>
     </header>
+    <div class="flex-grow flex justify-center items-center">
+        <img src="{{ url_for('static', filename='img/GoblinExamLogo.png') }}" alt="Logo">
+    </div>
+    {% include 'footer.html' %}
 </body>
 </html>
