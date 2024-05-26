@@ -58,8 +58,24 @@
                     <button type="submit" class="bg-custom-green hover:bg-yellow-400 text-white font-bold px-4 h-10 rounded items-center">Commencer le quiz</button>
                 </div>
             </form>
+            <button id="resumeButton" class="bg-custom-green hover:bg-yellow-400 text-white font-bold px-4 h-10 rounded items-center">Autoriser utilisation microphone</button>
+
         </div>
+
     </div>
+
+    <script>    
+            const resumeButton = document.getElementById('resumeButton'); 
+            let context;
+            window.onload = function() {
+                context = new AudioContext();
+            };
+            resumeButton.addEventListener('click', () =>{
+                context.resume().then(() => {
+                    console.log('Audio context resumed');
+                });
+            })
+    </script>
     {% include 'footer.html' %}
 </body>
 </html>
