@@ -8,6 +8,7 @@ import random
 from database import db
 import os 
 import torchaudio
+from random import shuffle
 
 
 quiz_bp = Blueprint('quiz', __name__)
@@ -130,7 +131,15 @@ def quiz():
     players = session['players']
     current_player = players[current_player_index]
 
-    return render_template('question.html', question=question, player=current_player)
+    answers = [question.aws1, question.aws2, question.aws3, question.aws4]
+
+    shuffle(answers)
+
+    answer_status = None
+    if request.method == 'POST':
+        answer_status = 'correct' if selected_answer == question.correct_aws else 'incorrect'
+
+    return render_template('question.html', question=question, player=current_player, answers=answers, answer_status=answer_status)
 
 @quiz_bp.route('/quiz_summary')
 def quiz_summary():
