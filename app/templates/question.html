@@ -14,7 +14,6 @@
     <div class="container mx-auto mt-8 p-4">
         <h1 class="text-3xl font-bold text-center text-gray-900">Quiz</h1>
         <div class="py-8">
-            <div id="countdown">8 seconds remaining</div>
 
             <form id="formQuizz" method="post" action="{{ url_for('quiz.quiz') }}" class="max-w-md mx-auto bg-white shadow-md rounded px-8 py-6">
                 <h3 class="text-xl font-bold mb-4">Question pour: {{ player }}</h3>
@@ -40,11 +39,12 @@
                 <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Next</button>
             </form>
 
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" id="startButton">Start Capture</button>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" id="stopButton" disabled>Stop Capture</button>
+           <!-- <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" id="startButton">Start Capture</button> -->
+            <!-- <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" id="stopButton" disabled>Stop Capture</button> -->
             <audio id="audioPlayer" controls></audio>
-            <div id="pred">Réponse donnée: </div>
-            
+            <!-- <div id="pred">Réponse donnée: </div>  -->
+            <div id="countdown"> <span></span></div>
+
         </div>
     </div>
     <script src="{{ url_for('static', filename='js/capture.js') }}"></script>

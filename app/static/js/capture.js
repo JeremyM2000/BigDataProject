@@ -40,23 +40,30 @@ document.addEventListener('DOMContentLoaded', function() {
                         body: formData
                     });
                     const data = await response.json();
-                    predElement.innerText = `Réponse donnée: ${data.prediction}`;
+                    // predElement.innerText = `Réponse donnée: ${data.prediction}`;
                     radio1.checked = (data.prediction === 1);
                     radio2.checked = (data.prediction === 2);
                     radio3.checked = (data.prediction === 3);
                     radio4.checked = (data.prediction === 4);
-                    form.submit();
-                } catch (error) {
+                    setTimeout(() => {
+                        form.submit();
+                    },2000)
+                    } catch (error) {
                     console.error('Error:', error);
-                    predElement.innerText = 'Error in audio processing';
+                    // predElement.innerText = 'Error in audio processing';
                 }
             };
 
         let secondsRemaining = 5;
-        countdownElement.innerText = `${secondsRemaining} seconds remaining`;
+        countdownElement.style.fontSize = '4rem';
+        countdownElement.style.textAlign = 'center';
+        countdownElement.innerText = `${secondsRemaining} `;
+
+
         const countdownTimer = setInterval(() => {
             secondsRemaining--;
-            countdownElement.innerText = `${secondsRemaining} seconds remaining`;
+            countdownElement.innerText = `${secondsRemaining}`;
+            updateCountdownStyle(secondsRemaining);
             if (secondsRemaining <= 0) {
                 clearInterval(countdownTimer);
                 if (mediaRecorder && mediaRecorder.state === 'recording') {
@@ -69,6 +76,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Start recording as soon as the page loads
-    startRecording();
+
+    function updateCountdownStyle(seconds) {
+        countdownElement.innerText = `${seconds}`;
+        countdownElement.style.color = `rgb(${255 - (seconds * 28)}, 0, ${seconds * 28})`;
+    }
+
+    // Laisser le temps de lire 
+    const delayToRead = 4000;
+    setTimeout(() => {
+        startRecording();
+    }, delayToRead);
+    
+    
 });
