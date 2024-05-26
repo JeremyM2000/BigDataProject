@@ -8,9 +8,9 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 DEBUG = True
 
 db_user = 'root'
-db_password = 'rootroot'
-db_host = '127.0.0.1'
-db_name = 'goblin_exam'
+db_password = 'root'
+db_host = 'localhost'
+db_name = 'gobelin_exam'
 
 db_password_encoded = quote_plus(db_password)
 
