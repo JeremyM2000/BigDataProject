@@ -77,7 +77,7 @@ def prepare_spectrogram(wave):
     s_max = spectrogram.max()
     s_min = spectrogram.min()
     spectrogram = (spectrogram - spectrogram.mean()) / spectrogram.std()
-    spectrogram = (spectrogram - s_min) / (s_max - s_min)
+    # spectrogram = (spectrogram - s_min) / (s_max - s_min)
 
     #Padding
     spectrogram = F.pad(spectrogram, (0, 2021-spectrogram.shape[1]))
