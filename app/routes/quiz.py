@@ -1,9 +1,14 @@
-from flask import Blueprint, render_template, request, flash, redirect, url_for, session
+from flask import Blueprint, render_template, request, flash, redirect, url_for, session, jsonify
+import io 
 from models.question import Question
 from models.asked_question import AskedQuestion
+from modules.mlfunctions import prepare_spectrogram, load_lstm, convert_webm_to_wav_memory, map
 from sqlalchemy import func
 import random
 from database import db
+import os 
+import torchaudio
+
 
 quiz_bp = Blueprint('quiz', __name__)
 
@@ -142,3 +147,48 @@ def quiz_summary():
     session['players'] = [session['user_name']]
 
     return render_template('quiz_summary.html', player_scores=player_scores)
+
+
+@quiz_bp.route('/upload-audio', methods=['POST'])
+def upload_audio():
+    lstm = load_lstm(f'{os.getcwd()}/modules/lstm-75-v4-acc-85.pth')
+    webm_file = request.files['audioFile']
+
+    if webm_file:
+        # Lire le contenu du fichier en mémoire
+        input_io = io.BytesIO(webm_file.read())
+
+        # Préparer un flux de sortie pour le WAV
+        output_io = io.BytesIO()
+
+        # Convertir WebM en WAV en mémoire
+        wave = convert_webm_to_wav_memory(input_io, output_io)
+        print(type(wave))
+        # Charger l'audio WAV en mémoire
+        wave, sr = torchaudio.load(output_io)
+        print(wave)
+        print(type(wave))
+        print(sr)
+        print(type(sr))
+
+        # Application de la prédiction
+        mel = prepare_spectrogram(wave)
+        print(mel.shape)
+        mel = mel.unsqueeze(0)
+        print(f'mean {mel.mean()}')
+        print(f'std {mel.std()}')
+        print(mel.shape)
+        lstm.eval()
+        prediction = lstm(mel)
+        print(prediction)
+        result = prediction.argmax(dim=1)
+        print(result.item())
+        x = result.item()+1
+        # x = map[result.item()]
+        # # Retourner la réponse avec les détails de la prédiction
+        return jsonify({
+            'success': 'File processed successfully',
+            'prediction': x
+        })
+
+    return jsonify({'error': 'Unsupported file'}), 400
