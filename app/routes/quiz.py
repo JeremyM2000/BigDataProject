@@ -1,9 +1,9 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for, session
-from app.models.question import Question
-from app.models.asked_question import AskedQuestion
+from models.question import Question
+from models.asked_question import AskedQuestion
 from sqlalchemy import func
 import random
-from .. import db
+from app import db
 
 quiz_bp = Blueprint('quiz', __name__)
 

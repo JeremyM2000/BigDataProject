@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, session
-from app.models.asked_question import AskedQuestion
+from models.asked_question import AskedQuestion
 from sqlalchemy import func
-from .. import db
+from app import db
 
 dashboard_bp = Blueprint('dashboard', __name__)
 
