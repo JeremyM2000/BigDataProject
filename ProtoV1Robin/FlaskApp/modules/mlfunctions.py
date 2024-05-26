@@ -46,11 +46,27 @@ class LSTM(nn.Module):
         out = out.reshape(out.shape[0], -1)
         out = self.fc(out)
         return out
-    
-device = torch.device("cpu")
+
+
+
+def load_lstm(path):
+    num_layers = 4
+    hidden_size = 50
+
+    # Input_size = n filter
+    input_size = 40
+
+    # Séquence length = padding = 2021  ou 2296
+    sequence_length = 2021
+    num_classes = 4
+    dropout = 0.2
+    lstm = LSTM(input_size, hidden_size, num_layers, num_classes, sequence_length, dropout)
+    lstm.load_state_dict(torch.load(path))
+    return lstm
 
 def prepare_spectrogram(wave):
     # Transform wave -> spectrogram
+    # wave = torch.tensor(wave)
     transform = MelSpectrogram(sample_rate=48000, n_mels=40, n_fft=512, hop_length=256)
     spectrogram = transform(wave)
     print(spectrogram.shape)
@@ -58,24 +74,12 @@ def prepare_spectrogram(wave):
     print(spectrogram.shape)
 
     # Normalize
-    mean = spectrogram.mean()
-    std = spectrogram.std()
-    spectrogram = (spectrogram - mean) / std
+    s_max = spectrogram.max()
+    s_min = spectrogram.min()
+    spectrogram = (spectrogram - spectrogram.mean()) / spectrogram.std()
+    spectrogram = (spectrogram - s_min) / (s_max - s_min)
 
     #Padding
     spectrogram = F.pad(spectrogram, (0, 2021-spectrogram.shape[1]))
     spectrogram = spectrogram.transpose(0, 1)
     return spectrogram
-
-def predict(spectrogram):
-    lstm = torch.load('new-lstm-15epch-15clas-88acc.pth')
-    lstm.to(device)    
-    lstm.eval()
-    return lstm(spectrogram)
-
-def predict_from_wave(wave):
-    wave_tensor = torch.tensor(wave)
-    if wave_tensor.ndim > 1:
-        wave_tensor = wave_tensor.mean(axis=1)
-    spectrogram = prepare_spectrogram(wave_tensor)
-    return predict(spectrogram)

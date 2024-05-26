@@ -22,11 +22,14 @@
     <button id="startButton">Start Capture</button>
     <button id="stopButton" disabled>Stop Capture</button>
     <audio id="audioPlayer" controls></audio>
+    <div id="maxValue">Max value will be displayed here</div>
+
 
     <script>
         const startButton = document.getElementById('startButton');
         const stopButton = document.getElementById('stopButton');
         const audioPlayer = document.getElementById('audioPlayer');
+        const maxValueElement = document.getElementById('maxValue');
 
         let mediaRecorder;
         let audioChunks = [];
@@ -61,7 +64,11 @@
                         body: formData
                     })
                     .then(response => response.json())
-                    .then(data => console.log('Success:', data))
+                    .then(data => {
+                        console.log(data.prediction);
+                        console.log(typeof(data))
+                        maxValueElement.innerText = `Maximum Value: ${data.prediction}`;
+                    })
                     .catch((error) => console.error('Error:', error));
                 };
 
