@@ -4,4 +4,6 @@
 
 #### Servan Pellé - Robin Bochu - Léo Varin - Jérémy Morel
 
-![alt text](https://github.com/JeremyM2000/BigDataProject/app/static/img/GoblinExamLogo.png?raw=true)
+[http://goblin-exam.fr/](http://goblin-exam.fr/)
+
+![alt text](https://github.com/JeremyM2000/BigDataProject/blob/master/app/static/img/GoblinExamLogo.png)
